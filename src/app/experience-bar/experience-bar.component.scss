@@ -1,0 +1,29 @@
+@import '../../dist/scss/variables.scss';
+
+.container {
+    margin-top: map-get($map:  $spacings, $key: normal);
+    display: grid;
+    grid-template-columns: 85% 15%;
+    overflow: hidden;
+  }
+.first-experience{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    border-top: map-get($map:  $colors, $key: secondary) map-get($map:  $spacings, $key: xxxsmall) solid;
+    img {
+      width: 5rem;
+    }
+    p {
+      color: map-get($map:  $colors, $key: primary) ;
+      margin: 0 map-get($map:  $spacings, $key: xsmall);
+    }
+  }
+  .second-experience{
+    border-top:  map-get($map:  $colors, $key: primary) map-get($map:  $spacings, $key: xxxsmall) solid;
+    p {
+      color: map-get($map:  $colors, $key: primary);
+      text-align: center;
+    }
+  }
+

@@ -1,0 +1,65 @@
+<!-- <div class="container">
+  <div class="about">
+    <div class="details">
+      <img class="flag-puc" src="assets/profile/icons/puc.png" alt="Forest" />
+    </div>
+    <p class="text">Master Degree - Full Stack Web.</p>
+    <div class="details">
+      <img class="flag-iftm" src="assets/profile/icons/IFTM.png" alt="Forest" />
+    </div>
+    <p class="text">Graduated - Analysis and systems development.</p>
+    <div class="details">
+      <img class="flag-iftm" src="assets/profile/icons/IFTM.png" alt="Forest" />
+    </div>
+    <p class="text">Technique - Computer Technician.</p>
+    <div class="details">
+      <img  class="flag-english" src="assets/profile/icons/english.png" alt="Forest" />
+    </div>
+    <p class="text" class="details">English (B2)</p>
+  </div>
+  <div class="profile">
+    <img class="image-profile" src="assets/profile/icons/profile.png" alt="Forest" />
+    <img class="image-tag" src="assets/profile/icons/tag2.png" alt="Forest" />
+    <div class="author">IGOR MUNDIM</div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="about">
+    <div class="details" (mouseover)="eventMaster(false)" (mouseleave)="eventMaster(true)" >
+      <img class="flag-puc" src="assets/profile/icons/puc.png" alt="Forest" />
+      <p *ngIf="master"class="text">Master Degree - Full Stack Web.</p>
+      <p *ngIf="!master" class="about-grad">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</p>
+    </div>
+
+    <div class="details" (mouseover)="eventGraduate(false)" (mouseleave)="eventGraduate(true)">
+      <img class="flag-iftm" src="assets/profile/icons/IFTM.png" alt="Forest" />
+      <p *ngIf="graduate" class="text">Graduate - Analysis and systems development.</p>
+      <p *ngIf="!graduate" class="about-grad">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</p>
+    </div>
+
+    <div class="details" (mouseover)="eventTechnique(false)" (mouseleave)="eventTechnique(true)">
+      <img class="flag-iftm" src="assets/profile/icons/IFTM.png" alt="Forest" />
+      <p *ngIf="technique"class="text" class="text">Technique - Computer Technician.</p>
+      <p *ngIf="!technique" class="about-grad">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</p>
+    </div>
+
+
+    <div class="details" (mouseover)="eventEnglish(false)" (mouseleave)="eventEnglish(true)">
+      <img class="flag-english" src="assets/profile/icons/english.png" alt="Forest" />
+      <p *ngIf="english"class="text">English (B2)</p>
+      <p *ngIf="!english" class="about-grad">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</p>
+    </div>
+
+
+  </div>
+  <div class="profile">
+    <img class="image-profile" src="assets/profile/icons/profile.png" alt="Forest" />
+    <img class="image-tag" src="assets/profile/icons/tag2.png" alt="Forest" />
+    <div class="author">IGOR MUNDIM</div>
+  </div>
+</div>

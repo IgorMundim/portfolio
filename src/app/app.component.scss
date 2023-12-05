@@ -1,0 +1,7 @@
+@import '../dist/scss/variables.scss';
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: map-get($map: $spacings, $key:xxtiny );
+  width: 100%;
+}
