@@ -1,10 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap');
 @import  './dist/scss/variables.scss';
 
 *, *::before, *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  color: map-get($map: $colors, $key: primary);
+  font-family: 'Indie Flower',roboto;
+  font-weight: 600;
 }
 
 html {
@@ -13,9 +21,11 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  letter-spacing: .2rem;
   color: map-get($map: $colors, $key: primary);
-  font-family: roboto;
+  font-family: 'Indie Flower',roboto;
+  font-weight: 600;
   background-color: #333333;
 }
 

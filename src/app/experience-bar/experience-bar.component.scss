@@ -11,19 +11,64 @@
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     border-top: map-get($map:  $colors, $key: secondary) map-get($map:  $spacings, $key: xxxsmall) solid;
+    -webkit-animation: scale-in-hor-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     img {
       width: 5rem;
-    }
-    p {
-      color: map-get($map:  $colors, $key: primary) ;
-      margin: 0 map-get($map:  $spacings, $key: xsmall);
+      margin: 1rem;
+      cursor: pointer;
+      &:hover {
+        -webkit-animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
     }
   }
   .second-experience{
     border-top:  map-get($map:  $colors, $key: primary) map-get($map:  $spacings, $key: xxxsmall) solid;
-    p {
-      color: map-get($map:  $colors, $key: primary);
-      text-align: center;
+    -webkit-animation: scale-in-hor-left .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-left .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation-delay: 1.5s;
+  }
+
+  p {
+    padding: 1rem;
+    cursor: pointer;
+    color: map-get($map:  $colors, $key: primary);
+    text-align: center;
+    &:hover {
+      -webkit-animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+  }
+  .numbers {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  @keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
     }
   }
 
+  @keyframes rotate-in-ver {
+    0% {
+      -webkit-transform: rotateY(-360deg);
+              transform: rotateY(-360deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+      opacity: 1;
+    }
+  }

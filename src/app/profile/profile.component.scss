@@ -25,15 +25,18 @@
 
   .details {
     display: flex;
+    cursor: pointer;
+    a{
+      display: flex;
+      align-items: center;
+    }
   }
 
 
   .text {
-      display: flex;
-      align-items: center;
+
       width: 100%;
 	    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
   }
 
   .flag-puc {
@@ -58,6 +61,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    cursor: pointer;
   }
 
   .image-profile {
@@ -65,26 +69,28 @@
     height: 90%;
     flex: right;
     border-radius: 4.8rem;
-    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: heartbeat 25s ease-in-out infinite both;
+    animation-delay: 5s;
   }
   .image-tag{
     position: absolute;
     bottom: 0%;
     width: 110%;
-    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
+    animation: heartbeat 25s ease-in-out infinite both;
+    animation-delay: 5s;
+    &:hover{
+      animation: heartbeat 3s ease-in-out infinite both;
+    }
 
   }
   .author {
     position: absolute;
-    bottom: 5.5%;
+    bottom: 4%;
     margin-left: map-get($map: $spacings, $key: xxsmall );
     grid-column: 1 / 3;
     color:map-get($map: $colors, $key: primary );
-    font-size: map-get($map: $spacings, $key: mediumSmall);
-    animation: heartbeat 20s ease-in-out infinite both;
-
-
+    font-size: map-get($map: $spacings, $key: medium);
+    font-weight: 700;
   }
 
   @keyframes slide-top {
@@ -99,6 +105,14 @@
   @keyframes slide-bottom {
     0% {
       transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes slide-bottom-profile {
+    0% {
+      transform: translateY(-15px);
     }
     100% {
       transform: translateY(0px);
@@ -131,15 +145,15 @@
               animation-timing-function: ease-out;
     }
     10% {
-              transform: scale(0.91);
+              transform: scale(.95);
               animation-timing-function: ease-in;
     }
     17% {
-              transform: scale(0.98);
+              transform: scale(1);
               animation-timing-function: ease-out;
     }
     33% {
-              transform: scale(0.87);
+              transform: scale(.95);
               animation-timing-function: ease-in;
     }
     45% {
@@ -148,12 +162,9 @@
     }
   }
 
-
-
-
   @keyframes rotate-in-hor {
     0% {
-              transform: rotateX(360deg);
+      transform: rotateX(360deg);
       opacity: 0;
     }
     100% {
