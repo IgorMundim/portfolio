@@ -1,0 +1,23 @@
+<div class="container" (mouseover)="eventCard(true)" (mouseleave)="eventCard(false)">
+  <div class="container-banner">
+    <img src={{skill.imageUrl}} alt={{skill.altImg}} />
+    <span>{{skill.language}}</span>
+  </div>
+  <div class="container-text">
+
+    <div class="first-panel" *ngIf="!secundPanel">{{skill.skills}}</div>
+    <div class="secund-panel" *ngIf="secundPanel">
+      <a rel="noopener" href={{skill.gitHub}} target="_blank">
+        <img src="assets/icons/github.svg" alt="" />
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+  <div class="container-footer">
+    <img src="assets/icons/check.svg" *ngIf='skill.tested' alt="tested"/>
+    <img src="assets/icons/close.svg" *ngIf='!skill.tested' alt="tested"/>
+    <span>Tested</span>
+    <img src="assets/icons/check.svg" alt="documented"/>
+    <span>Documented</span>
+  </div>
+</div>

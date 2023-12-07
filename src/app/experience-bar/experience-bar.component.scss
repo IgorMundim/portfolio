@@ -18,8 +18,8 @@
       margin: 1rem;
       cursor: pointer;
       &:hover {
-        -webkit-animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        -webkit-animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       }
     }
   }
@@ -36,8 +36,8 @@
     color: map-get($map:  $colors, $key: primary);
     text-align: center;
     &:hover {
-      -webkit-animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      animation: rotate-in-ver .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      -webkit-animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: rotate-in-ver 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
   }
   .numbers {

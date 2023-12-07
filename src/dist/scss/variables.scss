@@ -2,9 +2,11 @@ $primary-color: #DDDDDD;
 $colors:(
   primary: #DDDDDD,
   secondary: #dc143c,
+  third: #333333,
+
 );
 
-$font-sizes:(
+$font-sizes: (
   xxsmall: 1rem,
   xsmall: 1.2rem,
   small: 1.6rem,
@@ -20,6 +22,11 @@ $font-sizes:(
   hero: 8.0rem,
   xhero: 8.8rem,
   xxhero: 9.6rem,
+);
+
+$font-family: (
+  primary:  'Indie Flower',
+  secondary: 'Courier New',
 );
 
 $spacings: (
