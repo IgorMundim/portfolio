@@ -18,12 +18,15 @@ import { CommonModule } from '@angular/common';
 export class SkillComponent  implements OnInit{
   public show = true;
   public frontend = true;
+  public awsCDK = true;
   public skillsBackend: Array<ISkill> = []
   public skillsFrontend: Array<ISkill> = []
+  public skillsAwsCDK: Array<ISkill> = []
   constructor(private skillsService: SkillService ){}
   ngOnInit(): void {
     this.skillsBackend = this.skillsService.getProjectBackend();
     this.skillsFrontend = this.skillsService.getProjectFrontend();
+    this.skillsAwsCDK = this.skillsService.getProjectAwsCDK();
   }
 
   showBackend(value: boolean){
@@ -31,5 +34,8 @@ export class SkillComponent  implements OnInit{
   }
   showFrontend(value: boolean){
     this.frontend = value;
+  }
+  showAwsCDK(value: boolean){
+    this.awsCDK = value;
   }
 }

@@ -5,7 +5,10 @@
   </div>
   <div class="container-text">
 
-    <div class="first-panel" *ngIf="!secundPanel">{{skill.skills}}</div>
+    <div class="first-panel" *ngIf="!secundPanel">
+      <div class="skills">{{skill.skills}} </div>
+      <div class="advice">{{skill.about}}</div>
+    </div>
     <div class="secund-panel" *ngIf="secundPanel">
       <a rel="noopener" href={{skill.gitHub}} target="_blank">
         <img src="assets/icons/github.svg" alt="" />
@@ -13,7 +16,10 @@
       </a>
     </div>
   </div>
-  <div class="container-footer">
+  <div *ngIf="skill.experiment" class="container-footer">
+    {{skill.experiment}}
+  </div>
+  <div *ngIf="!skill.experiment" class="container-footer">
     <img src="assets/icons/check.svg" *ngIf='skill.tested' alt="tested"/>
     <img src="assets/icons/close.svg" *ngIf='!skill.tested' alt="tested"/>
     <span>Tested</span>

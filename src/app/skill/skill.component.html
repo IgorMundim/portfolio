@@ -1,6 +1,6 @@
 
 <div class="container">
-  <div class="container-title">Software skills</div>
+  <div class="container-title">My Test Projects</div>
   <div class="container-second-title">
     <h3>Backend</h3>
     <img *ngIf="!show" (click)="showBackend(true)" src="assets/icons/show-more.svg" alt="show-more">
@@ -8,6 +8,16 @@
   </div>
   <div class="skill-cards" *ngIf="show">
     <div *ngFor="let skill of skillsBackend;">
+      <app-card [skill]="skill"></app-card>
+    </div>
+  </div>
+  <div class="container-second-title">
+    <h3>AWS CDK</h3>
+    <img *ngIf="!awsCDK" (click)="showAwsCDK(true)" src="assets/icons/show-more.svg" alt="show-more">
+    <img *ngIf="awsCDK" (click)="showAwsCDK(false)" src="assets/icons/show-less.svg" alt="show-less">
+  </div>
+  <div class="skill-cards" *ngIf="awsCDK">
+    <div *ngFor="let skill of skillsAwsCDK;">
       <app-card [skill]="skill"></app-card>
     </div>
   </div>

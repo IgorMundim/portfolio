@@ -36,15 +36,21 @@
     justify-content: center;
   }
   .first-panel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
-    padding: 1rem;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
     -webkit-animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    .skills {
+      padding: 1rem;
+    }
+    .advice {
+      border-left: 1rem solid map-get($map: $colors, $key: secondary);
+      border-right: 1rem solid map-get($map: $colors, $key: secondary);
+      position: absolute;
+      bottom: 0;
+      background: map-get($map: $colors, $key: secondary);
+    }
   }
   .secund-panel {
     overflow: hidden;

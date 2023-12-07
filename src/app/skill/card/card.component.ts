@@ -19,9 +19,9 @@ export class CardComponent {
     altImg: '',
     framework: '',
     skills: '',
+    gitHub: '',
     tested: false,
-    documented: false,
-    gitHub: ''
+    documented: false
 }
   eventCard(value: boolean){
     this.secundPanel =  value;
