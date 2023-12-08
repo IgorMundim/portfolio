@@ -36,19 +36,19 @@
     justify-content: center;
   }
   .first-panel {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Arial Narrow', Arial, sans-serif;
     text-align: justify;
     -webkit-animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     .skills {
-      padding: 1rem;
+     padding: 1rem;
     }
     .advice {
-      border-left: 1rem solid map-get($map: $colors, $key: secondary);
-      border-right: 1rem solid map-get($map: $colors, $key: secondary);
       position: absolute;
       bottom: 0;
+      border-left: 1rem solid map-get($map: $colors, $key: secondary);
+      border-right: 1rem solid map-get($map: $colors, $key: secondary);
       background: map-get($map: $colors, $key: secondary);
     }
   }
@@ -79,13 +79,13 @@
     border-top: .3rem map-get($map: $colors, $key: secondary) solid;
     background: map-get($map: $colors, $key: primary);
     color:  map-get($map: $colors, $key: third);
-
+    text-align: center;
     span {
       margin: 1rem;
     }
     img {
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 3rem;
+      width: 3rem;
     }
   }
 }

@@ -1,17 +1,17 @@
-export interface ISkill  {
-    type: string,
-    language: string,
-    imageUrl:string,
-    altImg: string,
-    framework: string,
+export interface IProject  {
+    type?: string,
+    language?: string,
+    imageUrl?:string,
+    altImg?: string,
+    framework?: string,
     about?: string,
-    skills: string,
-    tested: boolean,
-    documented: boolean,
-    gitHub: string ,
+    skills?: string,
+    tested?: boolean,
+    documented?: boolean,
+    gitHub?: string ,
     experiment?: string,
 }
-const skills =
+const projects =
 [
   {
     type: 'backend',
@@ -175,6 +175,6 @@ const skills =
     documented: false,
     experiment: "APP to explore specific behavior",
   },
-] as ISkill[];
+] as IProject[];
 
-export default skills ;
+export default projects ;

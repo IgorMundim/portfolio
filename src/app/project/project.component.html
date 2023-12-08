@@ -6,9 +6,9 @@
     <img *ngIf="!show" (click)="showBackend(true)" src="assets/icons/show-more.svg" alt="show-more">
     <img *ngIf="show" (click)="showBackend(false)" src="assets/icons/show-less.svg" alt="show-less">
   </div>
-  <div class="skill-cards" *ngIf="show">
-    <div *ngFor="let skill of skillsBackend;">
-      <app-card [skill]="skill"></app-card>
+  <div class="product-cards" *ngIf="show">
+    <div *ngFor="let product of productsBackend;">
+      <app-card [product]="product"></app-card>
     </div>
   </div>
   <div class="container-second-title">
@@ -16,9 +16,9 @@
     <img *ngIf="!awsCDK" (click)="showAwsCDK(true)" src="assets/icons/show-more.svg" alt="show-more">
     <img *ngIf="awsCDK" (click)="showAwsCDK(false)" src="assets/icons/show-less.svg" alt="show-less">
   </div>
-  <div class="skill-cards" *ngIf="awsCDK">
-    <div *ngFor="let skill of skillsAwsCDK;">
-      <app-card [skill]="skill"></app-card>
+  <div class="product-cards" *ngIf="awsCDK">
+    <div *ngFor="let product of productsAwsCDK;">
+      <app-card [product]="product"></app-card>
     </div>
   </div>
   <div class="container-second-title">
@@ -26,9 +26,9 @@
     <img *ngIf="!frontend" (click)="showFrontend(true)" src="assets/icons/show-more.svg" alt="show-more">
     <img *ngIf="frontend" (click)="showFrontend(false)" src="assets/icons/show-less.svg" alt="show-less">
   </div>
-  <div class="skill-cards" *ngIf="frontend">
-    <div *ngFor="let skill of skillsFrontend;">
-      <app-card [skill]="skill"></app-card>
+  <div class="product-cards" *ngIf="frontend">
+    <div *ngFor="let product of productsFrontend;">
+      <app-card [product]="product"></app-card>
     </div>
   </div>
 </div>

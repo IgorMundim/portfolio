@@ -9,10 +9,8 @@
 a {
   text-decoration: none;
   font-size: 2rem;
-  letter-spacing: .2rem;
   color: map-get($map: $colors, $key: primary);
   font-family: map-get($map: $font-family, $key: primary), 'Courier New', Courier, monospace;
-  font-weight: 600;
 }
 
 html {
@@ -21,11 +19,9 @@ html {
 }
 
 body {
-  font-size: 2rem;
-  letter-spacing: .2rem;
+  font-size: 1.7rem;
   color: map-get($map: $colors, $key: primary);
   font-family: map-get($map: $font-family, $key: primary), 'Courier New', Courier, monospace;
-  font-weight: 600;
   background-color: #333333;
 }
 

@@ -1,0 +1,29 @@
+<div class="container" (mouseover)="eventCard(true)" (mouseleave)="eventCard(false)">
+  <div class="container-banner">
+    <img src={{project.imageUrl}} alt={{project.altImg}} />
+    <span>{{project.language}}</span>
+  </div>
+  <div class="container-text">
+
+    <div class="first-panel" *ngIf="!secundPanel">
+      <div class="skills">{{project.skills}} </div>
+      <div class="advice"> {{project.about}} </div>
+    </div>
+    <div class="secund-panel" *ngIf="secundPanel">
+      <a rel="noopener" href={{project.gitHub}} target="_blank">
+        <img src="assets/icons/github.svg" alt="" />
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+  <div *ngIf="project.experiment" class="container-footer">
+    {{project.experiment}}
+  </div>
+  <div *ngIf="!project.experiment" class="container-footer">
+    <img src="assets/icons/check.svg" *ngIf='project.tested' alt="tested"/>
+    <img src="assets/icons/close.svg" *ngIf='!project.tested' alt="tested"/>
+    <span>Tested</span>
+    <img src="assets/icons/check.svg" alt="documented"/>
+    <span>Documented</span>
+  </div>
+</div>

@@ -4,7 +4,8 @@ import { RouterOutlet } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperienceBarComponent } from './experience-bar/experience-bar.component';
-import { SkillComponent } from './skill/skill.component';
+import { ProjectComponent } from './project/project.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -15,11 +16,12 @@ import { SkillComponent } from './skill/skill.component';
     MenuComponent,
     ProfileComponent,
     ExperienceBarComponent,
-    SkillComponent
+    ProjectComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio_v2';
+  title = 'Portfolio';
 }

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input  } from '@angular/core';
-import { ISkill } from '../../data/skills';
+import { IProject } from '../../data/data';
 
 @Component({
   selector: 'app-card',
@@ -12,17 +12,7 @@ import { ISkill } from '../../data/skills';
 export class CardComponent {
   public secundPanel = false;
 
-  @Input('skill') public skill: ISkill = {
-    type: '',
-    language: '',
-    imageUrl: '',
-    altImg: '',
-    framework: '',
-    skills: '',
-    gitHub: '',
-    tested: false,
-    documented: false
-}
+  @Input('product') public project: IProject = {}
   eventCard(value: boolean){
     this.secundPanel =  value;
   }

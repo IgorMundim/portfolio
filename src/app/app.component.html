@@ -1,10 +1,20 @@
-
 <app-menu> </app-menu>
-<main class="container">
-<app-profile></app-profile>
-<app-experience-bar></app-experience-bar>
-<app-skill></app-skill>
+<main>
+  <section class="container-profile">
+    <app-profile ></app-profile>
+  </section>
+
+  <section class="container">
+    <app-experience-bar></app-experience-bar>
+  </section>
 </main>
+<section class="container">
+  <app-project></app-project>
+</section >
+<footer class="container">
+  <app-footer></app-footer>
+</footer>
+
 
 
 <router-outlet></router-outlet>
