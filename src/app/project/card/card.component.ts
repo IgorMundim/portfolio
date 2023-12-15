@@ -7,7 +7,8 @@ import { IProject } from '../../data/data';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+  styleUrl: './card.component.scss',
+  
 })
 export class CardComponent {
   public secundPanel = false;

@@ -1,0 +1,33 @@
+@import "../../dist/scss/variables.scss";
+:host{
+  .title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .skill{
+    display: flex;
+    margin-top: .5rem;
+    word-spacing: 0.3rem;
+    a {
+      cursor: pointer;
+      &:hover{
+        font-size: 1.8rem;
+        transition: .3s;
+        color: map-get($map: $colors, $key: secondary);
+      }
+    }
+    div {
+      margin-left: 1rem;
+    }
+    h4 {
+      white-space: nowrap;
+      color: map-get($map: $colors, $key: secondary);
+    }
+  }
+  .svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem ;
+  }
+}

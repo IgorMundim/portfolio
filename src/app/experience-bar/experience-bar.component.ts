@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {  Router } from '@angular/router';
 
 @Component({
   selector: 'app-experience-bar',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './experience-bar.component.scss'
 })
 export class ExperienceBarComponent {
-
+  constructor(private router: Router){}
+  openChevroletLink():void{
+      this.router.navigate(["/chevrolet"]);''
+  }
 }

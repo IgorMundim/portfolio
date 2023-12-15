@@ -45,7 +45,7 @@ const projects =
     imageUrl: 'assets/banner/express.webp',
     altImg: 'Express JS',
     framework: 'Express JS',
-    skills: 'Express JS - Rest Api, JWT Authentication, Authorization, Knex, Swagger, CORs, Jest - SuperTest, Express Async Error, Multer, Knex, PostgreSql.',
+    skills: 'Express JS - Rest Api, JWT Authentication, Authorization, Knex, Swagger, CORs, Jest & SuperTest, Express Async Error, Multer, Knex, PostgreSql.',
     about: "This application is designed to implement the core of a web backend. The business rule is ticket sales.",
     gitHub: 'https://github.com/IgorMundim/ticket-backend-node-sql',
     tested: true,
@@ -176,5 +176,6 @@ const projects =
     experiment: "APP to explore specific behavior",
   },
 ] as IProject[];
+
 
 export default projects ;

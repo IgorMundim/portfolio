@@ -1,0 +1,20 @@
+@import '../../../dist/scss/variables.scss';
+:host {
+  .container{
+    margin: 9rem auto 5rem auto;
+    width: 80%;
+  }
+  .container-it{
+    margin-bottom: 2rem;
+    div{
+      margin: 1rem 0 0 3rem;
+    }
+  }
+  .container-communication{
+    margin-bottom: 2rem;
+    div{
+      margin: 1rem 0 0 3rem;
+    }
+  }
+
+}

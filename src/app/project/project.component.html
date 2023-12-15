@@ -1,8 +1,8 @@
 
 <div class="container">
-  <div class="container-title">My Test Projects</div>
+  <h3 class="title">My Test Projects</h3>
   <div class="container-second-title">
-    <h3>Backend</h3>
+    <h4>Backend</h4>
     <img *ngIf="!show" (click)="showBackend(true)" src="assets/icons/show-more.svg" alt="show-more">
     <img *ngIf="show" (click)="showBackend(false)" src="assets/icons/show-less.svg" alt="show-less">
   </div>
@@ -12,17 +12,17 @@
     </div>
   </div>
   <div class="container-second-title">
-    <h3>AWS CDK</h3>
+    <h4>IaC</h4>
     <img *ngIf="!awsCDK" (click)="showAwsCDK(true)" src="assets/icons/show-more.svg" alt="show-more">
     <img *ngIf="awsCDK" (click)="showAwsCDK(false)" src="assets/icons/show-less.svg" alt="show-less">
   </div>
-  <div class="product-cards" *ngIf="awsCDK">
+  <div class="product-cards" *ngIf="awsCDK" >
     <div *ngFor="let product of productsAwsCDK;">
       <app-card [product]="product"></app-card>
     </div>
   </div>
   <div class="container-second-title">
-    <h3>Frontend</h3>
+    <h4>Frontend</h4>
     <img *ngIf="!frontend" (click)="showFrontend(true)" src="assets/icons/show-more.svg" alt="show-more">
     <img *ngIf="frontend" (click)="showFrontend(false)" src="assets/icons/show-less.svg" alt="show-less">
   </div>

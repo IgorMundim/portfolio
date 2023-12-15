@@ -1,15 +1,31 @@
 <div class="container">
   <div class="menu-container">
     <div class="logo">
-      <a>
+      <a
+      routerLink=""
+      fragment="home"
+      (click)="jumpTo('home')"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >
       {{home}}
       </a>
     </div>
     <nav>
-      <a>About</a>
-      <a>Skills</a>
-      <a>Projects</a>
+      <a
+        routerLink="/more"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true }"
+        >More</a>
+      <!-- <a
 
+        fragment="skill"
+        (click)="jumpTo('skills')"
+        routerLinkActive="active"
+
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Skills</a>
+      <a>Projects</a> -->
     </nav>
   </div>
 </div>

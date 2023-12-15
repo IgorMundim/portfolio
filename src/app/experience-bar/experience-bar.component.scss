@@ -1,9 +1,8 @@
 @import '../../dist/scss/variables.scss';
 
 .container {
-    margin-top: map-get($map:  $spacings, $key: normal);
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 80% 20%;
     overflow: hidden;
   }
 .first-experience{
@@ -15,6 +14,10 @@
 	        animation: scale-in-hor-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     img {
       width: 5rem;
+      margin-right: 1rem;
+
+    }
+    div {
       margin: 1rem;
       cursor: pointer;
       &:hover {

@@ -1,17 +1,17 @@
 @import '../../dist/scss/variables.scss';
-.container{
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: auto 25rem;
-    gap: map-get($map: $spacings, $key: xxsmall );
-    overflow: hidden;
-}
-.about {
-    display: grid;
-    position: relative;
-    row-gap:map-get($map: $spacings, $key: mediumLarge );
-    align-content: center;
+  .container{
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: auto 25rem;
+      gap: map-get($map: $spacings, $key: xxsmall );
+      overflow: hidden;
+  }
+  .about {
+      display: grid;
+      position: relative;
+      row-gap:map-get($map: $spacings, $key: mediumLarge );
+      align-content: center;
   }
 
 
@@ -25,9 +25,8 @@
     }
   }
   .about-grad {
-    display: flex;
-    align-items: center;
-    font-size: 1.3rem;
+    // display: flex;
+    // align-items: center;
     margin-left: 2rem;
     animation: rotate-in-hor .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
