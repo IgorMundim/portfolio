@@ -1,5 +1,6 @@
 @import '../../../dist/scss/variables.scss';
 :host {
+
   .container{
     margin: 9rem auto 5rem auto;
     width: 80%;
@@ -15,6 +16,28 @@
     div{
       margin: 1rem 0 0 3rem;
     }
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      max-width: 10rem;
+      max-height: 10rem;
+      border-radius: 5rem;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.25);
+        transition: .5s;
+      }
+    }
+    a {
+      &:hover{
+        transform: scale(1.25);
+        transition: .5s;
+      }
+    }
+    margin-bottom: 2rem;
   }
 
 }

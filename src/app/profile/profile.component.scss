@@ -5,15 +5,30 @@
       align-items: center;
       grid-template-columns: auto 25rem;
       gap: map-get($map: $spacings, $key: xxsmall );
-      overflow: hidden;
+      @media (max-width: 720px) {
+        grid-template-columns: none;
+      }
   }
   .about {
       display: grid;
       position: relative;
-      row-gap:map-get($map: $spacings, $key: mediumLarge );
+      row-gap: map-get($map: $spacings, $key: mediumLarge );
       align-content: center;
+      @media (max-width: 720px) {
+        order: 2;
+      }
   }
-
+  .profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    @media (max-width: 720px) {
+      order: 1;
+    }
+  }
 
   .details {
     display: flex;
@@ -25,22 +40,18 @@
     }
   }
   .about-grad {
-    // display: flex;
-    // align-items: center;
     margin-left: 2rem;
     animation: rotate-in-hor .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
   .text {
       margin-left: 2rem;
-      font-size: 2rem;
 	    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
   .flag-puc {
       width: 8rem;
 	    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
   }
 
   .flag-iftm {
@@ -55,32 +66,29 @@
     animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
-  .profile {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 25rem;
-    cursor: pointer;
-  }
+
 
   .image-profile {
     position: absolute;
-
     top: -5rem;
     width: 22.5rem;
     height: 22.5rem;
     border-radius: 4.8rem;
     animation: heartbeat 25s ease-in-out infinite both;
     animation-delay: 5s;
+    @media (max-width: 720px) {
+      top: 0;
+    }
   }
   .image-tag{
     position: absolute;
     bottom: 5rem;
-    width: 100%;
+    width: 25.5rem;
     animation: heartbeat 25s ease-in-out infinite both;
     animation-delay: 5s;
-    &:hover{
-      animation: heartbeat 3s ease-in-out infinite both;
+    @media (max-width: 720px) {
+      bottom: -1rem;
+      width: 32rem;
     }
 
   }
@@ -92,6 +100,9 @@
     color:map-get($map: $colors, $key: primary );
     font-size: map-get($map: $spacings, $key: medium);
     font-weight: 500;
+    @media (max-width: 720px) {
+      bottom: 0;
+    }
   }
 
   @keyframes slide-top {

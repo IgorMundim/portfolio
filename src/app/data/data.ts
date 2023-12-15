@@ -10,6 +10,7 @@ export interface IProject  {
     documented?: boolean,
     gitHub?: string ,
     experiment?: string,
+    linkPage?: string
 }
 const projects =
 [
@@ -76,6 +77,7 @@ const projects =
     tested: false,
     documented: true,
     experiment: false,
+    linkPage: 'a'
   },
   {
     type: 'frontend',
@@ -87,7 +89,8 @@ const projects =
     gitHub: 'https://github.com/IgorMundim/angular-base',
     tested: false,
     documented: false,
-    experiment: "APP to explore specific behavior"
+    experiment: "APP to explore specific behavior",
+    linkPage: 'a'
   },
   {
     type: 'frontend',
@@ -100,6 +103,7 @@ const projects =
     tested: false,
     documented: false,
     experiment: "APP to explore specific behavior",
+    linkPage: 'a'
   },
   {
     type: 'frontend',
@@ -111,7 +115,8 @@ const projects =
     gitHub: 'https://github.com/IgorMundim/angular-base',
     tested: false,
     documented: false,
-    experiment: "APP to explore specific behavior"
+    experiment: "APP to explore specific behavior",
+    linkPage: 'a'
   },
   {
     type: 'frontend',
@@ -124,6 +129,7 @@ const projects =
     tested: false,
     documented: false,
     experiment: "APP to explore specific behavior",
+    linkPage: 'a'
   },
   {
     type: 'frontend',
@@ -135,7 +141,8 @@ const projects =
     gitHub: 'https://github.com/IgorMundim/angular-17',
     tested: false,
     documented: false,
-    experiment: "APP to explore specific behavior"
+    experiment: "APP to explore specific behavior",
+    linkPage: 'a'
 
   },
   {
@@ -149,6 +156,7 @@ const projects =
     tested: false,
     documented: false,
     experiment: "APP to explore specific behavior",
+    linkPage: 'a'
   },
   {
     type: 'frontend',
@@ -161,6 +169,7 @@ const projects =
     tested: false,
     documented: false,
     experiment: "APP to explore specific behavior",
+    linkPage: 'a'
   },
   {
     type: 'aws-cdk',

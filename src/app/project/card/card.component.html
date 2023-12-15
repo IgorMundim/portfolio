@@ -4,7 +4,6 @@
     <span>{{project.language}}</span>
   </div>
   <div class="container-text">
-
     <div class="first-panel" *ngIf="!secundPanel">
       <div class="skills">{{project.skills}} </div>
       <div class="advice"> {{project.about}} </div>
@@ -13,6 +12,10 @@
       <a rel="noopener" href={{project.gitHub}} target="_blank">
         <img src="assets/icons/github.svg" alt="" />
         <span>GitHub</span>
+      </a>
+      <a rel="noopener" *ngIf="project.linkPage" href={{project.linkPage}} target="_blank">
+        <img src="assets/icons/page.svg" alt="" />
+        <span>Open Page</span>
       </a>
     </div>
   </div>
